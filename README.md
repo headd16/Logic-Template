@@ -48,7 +48,6 @@ CLIENT_ID=
 GUILD_ID=
 PREFIX=
 Invite=
-MONGO_DB=
 ```
 
 ---

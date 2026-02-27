@@ -4,13 +4,11 @@ const loadCommands = require("./components/Commands");
 const loadSlashCommands = require("./components/SlashCommands");
 const loadEvents = require("./components/Events");
 const refreshSlashCommands = require("./plugins/SlashCommands");
-const connectToDatabase = require("./plugins/MongooseDB");
 
 loadCommands(client);
 loadSlashCommands(client);
 loadEvents(client);
 refreshSlashCommands(client);
-connectToDatabase();
 
 client.login(process.env.TOKEN);
 
